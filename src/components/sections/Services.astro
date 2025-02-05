@@ -1,0 +1,47 @@
+---
+import Service from "../cards/Service.astro";
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import Title from "../shared/Title.astro";
+import { services } from "../../utils/data.ts";
+import GradiantText from "../shared/GradiantText.astro";
+
+type ServicesProps = {
+  title: string;
+  features: string[];
+  icon: string;
+};
+
+export interface Props {
+  className?: string;
+}
+
+const { className } = Astro.props;
+---
+
+<!-- <section
+  id="services"
+  class=`relative bg-gradient-to-br from-blue-100 to-sky-200 dark:from-indigo-800 dark:to-green-950  ${className}`
+> -->
+<section id="services" class={`relative ${className}`}>
+
+
+  <Container className="space-y-10 md:sapce-y-12">
+    <div class="text-center max-w-3xl mx-auto space-y-4">
+      <Title className="">Why Choose <GradiantText>VisionPath</GradiantText>?</Title>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      {
+        services.map((service: ServicesProps) => {
+          return (
+            <Service
+              title={service.title}
+              features={service.features}
+              icon={service.icon}
+            />
+          );
+        })
+      }
+    </div>
+  </Container>
+</section>
