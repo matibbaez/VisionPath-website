@@ -5,16 +5,12 @@ import BtnLink from "../components/shared/BtnLink.astro";
 
 const navItems = [
   {
-    href: "#",
-    text: "Home",
-  },
-  {
     href: "#solutions",
-    text: "Solutions",
+    text: "Our Process",
   },
   {
     href: "#services",
-    text: "Services",
+    text: "Why Us?",
   },
   {
     href: "#features",
@@ -22,7 +18,7 @@ const navItems = [
   },
   {
     href: "#faq",
-    text: "About us",
+    text: "FAQs",
   },
 ];
 ---
@@ -32,7 +28,7 @@ const navItems = [
     <nav class="w-full flex justify-between gap-6 relative">
       <!-- logo -->
       <div class="min-w-max inline-flex relative">
-        <a href="/agency-template" class="relative flex items-center gap-1">
+        <a href="#" class="relative flex items-center gap-1">
           <div class="relative w-12 h-12 overflow-hidden flex rounded-xl">
             <img src="/LogoVision.svg" alt="VisionPath Logo" class="w-full h-full" />
           </div>
@@ -66,8 +62,8 @@ const navItems = [
           class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-box-bg lg:border-0 px-6 lg:px-0"
         >
           <BtnLink
-            text="Get Started"
-            href="#cta"
+            text="Build Your Future"
+            href="https://www.linkedin.com/company/visionpath/"
             className="flex justify-center w-full sm:w-max"
             variant="primary"
           />
