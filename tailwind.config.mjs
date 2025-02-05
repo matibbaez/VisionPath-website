@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  mode: "jit", // 🔥 Activa el Just-In-Time Compiler
+  content: ["./src/**/*.{astro,html,js,ts}"],
   darkMode: "class",
   theme: {
     extend: {
@@ -21,3 +22,4 @@ export default {
   },
   plugins: [],
 };
+
