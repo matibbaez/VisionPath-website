@@ -1,6 +1,5 @@
-import visibilityDilemma from "../assets/images/timelinebanner.png";
-import engagementGap from "../assets/images/visionbannerfinal.png";
-import resultsInHibernation from "../assets/images/results-in-hibernation.jpg";
+import visibilityDilemma from "../assets/images/timelinebanner.webp";
+import engagementGap from "../assets/images/visionbannerfinal.webp";
 
 const services = [
   {
